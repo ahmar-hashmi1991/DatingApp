@@ -1,0 +1,11 @@
+Installing node.js with NVM
+
+dotnet --info
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+press ctrl+shift+P
+type "assets"
+
+dotnet dev-certs https --trust
+dotnet watch run
