@@ -9,3 +9,7 @@ type "assets"
 
 dotnet dev-certs https --trust
 dotnet watch run
+
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef migrations add UserPasswordAdded
+dotnet ef database update
